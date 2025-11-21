@@ -1,0 +1,13 @@
+categories:
+  - name: Coffee/Dining
+    examples: ['starbucks', 'cafe', 'restaurant', 'dunkin', 'coffee']
+  - name: Shopping
+    examples: ['amazon', 'flipkart', 'mall', 'store', 'paytm']
+  - name: Fuel
+    examples: ['shell', 'bp', 'petrol', 'gas', 'fuel']
+  - name: Grocery
+    examples: ['walmart', 'grocery', 'bigbasket', 'dmart', 'grocery store']
+  - name: Utilities
+    examples: ['electricity', 'water', 'telco', 'internet', 'recharge']
+  - name: Salary
+    examples: ['salary', 'payroll', 'deposit', 'credit']
