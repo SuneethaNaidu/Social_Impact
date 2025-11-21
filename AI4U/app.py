@@ -1,8 +1,3 @@
-"""
-ai4u/app.py
-A simple Flask prototype exposing text and speech endpoints.
-Replace rule-based logic with actual on-device models for production.
-"""
 from flask import Flask, request, jsonify
 from offline_inference import NlpInfer, SpeechInfer
 
@@ -26,10 +21,9 @@ def speech_to_intent():
     payload = request.json or {}
     speech_text = payload.get('speech_text', '')
     if not speech_text:
-        return jsonify({'error':'speech_text required for prototype'}), 400
+        return jsonify({'error':'speech_text required'}), 400
     resp = speech.recognize(speech_text)
     return jsonify(resp)
 
 if __name__ == '__main__':
-    # use 0.0.0.0 to allow remote testing on a device if needed
     app.run(host='0.0.0.0', port=8000, debug=True)
