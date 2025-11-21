@@ -1,12 +1,32 @@
+# Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 *.pkl
 *.joblib
+*.log
+
+# Environments
 .env
 venv/
 venv*/
-*.sqlite
-models/
-*.log
+*.env
+
+# OS Specific
 .DS_Store
-*.zip
+
+# Models & data
+models/
+*.h5
+*.tflite
+*.onnx
+*.bin
+*.pth
+*.pt
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Cache
+.cache/
