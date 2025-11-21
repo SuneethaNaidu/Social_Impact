@@ -1,0 +1,4 @@
+Flask>=2.0
+torch>=1.8.0    # optional if using Hugging Face small models locally
+transformers>=4.0.0  # optional for small models
+tensorflow==2.11.0  # optional for conversion to TFLite if used
